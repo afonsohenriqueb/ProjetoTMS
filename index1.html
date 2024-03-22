@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Configuração da página -->
+  <meta charset="UTF-8">
+  <!-- Incluindo o Bootstrap para estilos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Incluindo o arquivo CSS externo -->
+  <link rel="stylesheet" href="caminho-para-seu-arquivo/styles.css">
+  <!-- Incluindo jQuery, Popper.js e Bootstrap JavaScript para funcionalidades adicionais -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Incluindo o arquivo de script JavaScript externo -->
+  <script src="JS/scripts.js"></script>
+  <style>
+    /* Adicionando efeito hover aos cartões */
+    .card {
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 50, 0.8);
+      transform: scale(1.05);
+    }
+
+    /* Adicionando degradê de azul, branco e preto no cartão */
+    .card .card-body {
+      background: linear-gradient(to bottom, #3498db, #ffffff, #2c3e50);
+      color: #fff; /* Define a cor do texto como branco */
+      border: 1px solid #000; /* Adiciona uma borda preta ao redor do card-body */
+      border-radius: 5px; /* Adiciona bordas arredondadas */
+      padding: 10px; /* Adiciona algum espaçamento interno */
+    }
+
+    /* Adicionando contorno (stroke) preto às letras do card-title e card-text */
+    .card .card-body .card-title {
+      -webkit-text-stroke: 1px black; /* Contorno preto no WebKit (Chrome, Safari, etc.) */
+      text-stroke: 1px black; /* Contorno preto em navegadores que suportam a propriedade padrão */
+      color: #fff; /* Define a cor do texto como branco */
+      padding: 5px;
+      margin-bottom: 10px;
+      font-weight: bold; /* Adiciona negrito ao texto */
+    }
+
+    /* Definindo que todas as letras do card-text sejam pretas e em negrito */
+    .card .card-body .card-text {
+      color: #000; /* Define a cor do texto como preto */
+      font-weight: bold; /* Adiciona negrito ao texto */
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Adição da mensagem de boas-vindas -->
+  <div class="container mt-3 text-center">
+    <h1>Bem Vindo ao TMS - Itaipu Logística</h1>
+  </div>
+
+  <div class="container mt-2">
+    <div class="row mx-auto d-flex justify-content-center">
+      <!-- Cartões de Departamentos -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-person-fill fs-3 mb-3"></i>
+            <h5 class="card-title">RH</h5>
+            <p class="card-text">Recursos Humanos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-briefcase-fill fs-3 mb-3"></i>
+            <h5 class="card-title">Comercial</h5>
+            <p class="card-text">Departamento Comercial</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-laptop-fill fs-3 mb-3"></i>
+            <h5 class="card-title">TI</h5>
+            <p class="card-text">Tecnologia da Informação</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-cash fs-3 mb-3"></i>
+            <h5 class="card-title">Financeiro</h5>
+            <p class="card-text">Departamento Financeiro</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Novo bloco para o Departamento de Expedição -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-box-fill fs-3 mb-3"></i>
+            <h5 class="card-title">Expedição</h5>
+            <p class="card-text">Departamento de Expedição</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé com tarja preta e copyright -->
+  <footer class="bg-dark text-white py-3 fixed-bottom">
+    <div class="container text-center">
+      <p>&copy; 2024 Itaipu Logística. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
